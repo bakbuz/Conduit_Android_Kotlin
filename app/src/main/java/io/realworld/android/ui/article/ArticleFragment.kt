@@ -37,7 +37,7 @@ class ArticleFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        articleViewModel.article.observe({ lifecycle }) {
+        articleViewModel.article.observe(viewLifecycleOwner) {
             _binding?.apply {
                 titleTextView.text = it.title
                 bodyTextView.text = it.body

@@ -34,7 +34,7 @@ class GlobalFeedFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel.fetchGlobalFeed()
-        viewModel.feed.observe({ lifecycle }) {
+        viewModel.feed.observe(viewLifecycleOwner) {
             feedAdapter.submitList(it)
         }
     }

@@ -35,7 +35,7 @@ class MyFeedFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel.fetchMyFeed()
-        viewModel.feed.observe({ lifecycle }) {
+        viewModel.feed.observe(viewLifecycleOwner) {
             feedAdapter.submitList(it)
         }
     }

@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
             authViewModel.getCurrentUser(t)
         }
 
-        authViewModel.user.observe({ lifecycle }) {
+        authViewModel.user.observe(this) {
             updateMenu(it)
             it?.token?.let { t ->
                 sharedPreferences.edit {
@@ -73,8 +73,6 @@ class MainActivity : AppCompatActivity() {
             }
             navController.navigateUp()
         }
-
-
     }
 
     private fun updateMenu(user: User?) {

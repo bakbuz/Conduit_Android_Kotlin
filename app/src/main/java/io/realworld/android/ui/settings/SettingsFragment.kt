@@ -27,7 +27,7 @@ class SettingsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        authViewModel.user.observe({ lifecycle }) {
+        authViewModel.user.observe(viewLifecycleOwner) {
             _binding?.apply {
                 bioEditText.setText(it?.bio ?: "")
                 emailEditText.setText(it?.email ?: "")
