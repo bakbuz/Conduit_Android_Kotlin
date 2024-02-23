@@ -10,7 +10,7 @@ import io.realworld.api.models.entities.Article
 import kotlinx.coroutines.launch
 
 class ArticleViewModel : ViewModel() {
-    val api = ConduitClient.publicApi
+    private val api = ConduitClient.publicApi
 
     private val _article = MutableLiveData<Article>()
     val article: LiveData<Article> = _article
@@ -29,7 +29,8 @@ class ArticleViewModel : ViewModel() {
         body:String?,
         tagList:List<String>?=null
     ) =viewModelScope.launch {
-        val article = ArticlesRepo.createArticle(
+        //val article = ArticlesRepo.createArticle(
+        ArticlesRepo.createArticle(
             title=title,
             description = description,
             body=body,

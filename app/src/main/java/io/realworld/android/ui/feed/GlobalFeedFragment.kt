@@ -22,7 +22,7 @@ class GlobalFeedFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        viewModel = ViewModelProvider(this).get(FeedViewModel::class.java)
+        viewModel = ViewModelProvider(this)[FeedViewModel::class.java]
         feedAdapter = ArticleFeedAdapter { openArticle(it) }
 
         _binding = FragmentFeedBinding.inflate(inflater, container, false)
@@ -39,7 +39,7 @@ class GlobalFeedFragment : Fragment() {
         }
     }
 
-    fun openArticle(articleId: String) {
+    private fun openArticle(articleId: String) {
         findNavController().navigate(
             R.id.action_globalFeed_openArticle,
             bundleOf(
