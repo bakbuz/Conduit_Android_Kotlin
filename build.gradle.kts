@@ -1,7 +1,7 @@
 buildscript {
-    val kotlin_version by extra("1.9.22")
-    val retrofit_version by extra("2.9.0")
-    val moshi_version by extra("1.15.1")
+    val kotlinVersion by extra("1.9.22")
+    val retrofitVersion by extra("2.9.0")
+    val moshiVersion by extra("1.15.1")
 }
 
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
