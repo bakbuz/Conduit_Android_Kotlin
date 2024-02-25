@@ -16,4 +16,6 @@
 
     <string name="arg_article_id">ARTICLE_ID</string>
 
+    <string name="email_hint">Email address</string>
+
 </resources>
