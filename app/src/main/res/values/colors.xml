@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="white">#EFEFEF</color>
+    <!-- Light -->
     <color name="md_theme_light_primary">#5CB85C</color>
-    <color name="md_theme_dark_primary">#347634</color>
     <color name="md_theme_light_secondary">#818a91</color>
+    <!-- Dark -->
+    <color name="md_theme_dark_primary">#347634</color>
     <color name="md_theme_dark_secondary">#4B5359</color>
 </resources>
