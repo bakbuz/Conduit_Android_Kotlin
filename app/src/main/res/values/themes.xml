@@ -1,5 +1,5 @@
 <resources>
-    <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
+    <style name="Theme.Conduit" parent="Theme.Material3.Light.NoActionBar">
         <item name="colorPrimary">@color/md_theme_light_primary</item>
         <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
         <item name="colorPrimaryContainer">@color/md_theme_light_primaryContainer</item>
@@ -29,12 +29,12 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="AppTheme.NoActionBar">
+    <style name="Theme.Conduit.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.Material3.Dark" />
+    <style name="Theme.Conduit.AppBarOverlay" parent="ThemeOverlay.Material3.Dark" />
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.Material3.Light" />
+    <style name="Theme.Conduit.PopupOverlay" parent="ThemeOverlay.Material3.Light" />
 </resources>
