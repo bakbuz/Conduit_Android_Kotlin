@@ -1,5 +1,5 @@
 buildscript {
-    val kotlinVersion by extra("1.9.23")
+    val kotlinVersion by extra("2.0.0")
     val retrofitVersion by extra("2.11.0")
     val moshiVersion by extra("1.15.1")
 }
