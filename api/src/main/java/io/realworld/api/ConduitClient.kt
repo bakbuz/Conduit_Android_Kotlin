@@ -22,11 +22,11 @@ object ConduitClient {
         chain.proceed(req)
     }
 
-    val okHttpBuilder = OkHttpClient.Builder()
+    private val okHttpBuilder = OkHttpClient.Builder()
         .readTimeout(5, TimeUnit.SECONDS)
         .connectTimeout(2, TimeUnit.SECONDS)
 
-    val retrofitBuilder = Retrofit.Builder()
+    private val retrofitBuilder = Retrofit.Builder()
         .baseUrl("https://conduit.productionready.io/api/")
         .addConverterFactory(MoshiConverterFactory.create())
 
