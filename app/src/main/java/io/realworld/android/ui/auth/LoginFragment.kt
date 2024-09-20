@@ -26,7 +26,7 @@ class LoginFragment : Fragment() {
         return _binding?.root
     }
 
-    // shared prefenrecnes 'a sakla
+    // shared preferences 'a sakla
     // sadece token değerini encrypt ederek sakla
     // uygulama initialize edilirkn o token değerine sahip kullanıcının bilgilerini çek
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
