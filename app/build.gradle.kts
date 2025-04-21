@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "io.realworld.android"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "io.realworld.android"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 9
         versionName = "1.0.9"
 
